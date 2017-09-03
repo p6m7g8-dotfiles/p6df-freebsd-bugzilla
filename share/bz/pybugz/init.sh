@@ -21,7 +21,7 @@ EOF
 _data () {
   local url="$1"
   local user="$2"
-  local password="$3"
+  local password="`echo "$3" | sed -e 's/%/%%/g'`"
 
   cat <<EOF 
 [FreeBSD]
