@@ -4,5 +4,5 @@ backend_comment () {
   local pr=$1
   local comment_file="$2"
 
-  $bugz modify --coment-from $comment_file $pr
+  $bugz modify --comment-from $comment_file $pr
 }
