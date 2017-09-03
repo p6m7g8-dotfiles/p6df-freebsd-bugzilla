@@ -14,7 +14,7 @@ Options:
 
 Defaults:
   cat/port defaults to `pwd`
-  Hardware defsults to 'Any'
+  Hardware defaults to 'Any'
   Component defaults to 'Individual Port(s)'
   Severity defaults to 'Affects Only Me'
 EOF
