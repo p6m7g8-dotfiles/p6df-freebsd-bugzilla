@@ -43,8 +43,10 @@ close () {
   fi
 
   local d=$(_pr_dir $pr)
-  local port_dir=$(_port_from_pr $d)
-  (cd $PORTSDIR/$port_dir ; find . -name ".gitattributes" -delete)
+  if [ -f ${d}/pr ]; then
+    local port_dir=$(_port_from_pr $d)
+    (cd $PORTSDIR/$port_dir ; find . -name ".gitattributes" -delete)
+  fi
   rm -rf $d
 }
 
