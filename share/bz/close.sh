@@ -4,7 +4,7 @@ Usage: bz close [-c comment | -e] pr
        bz close -h
 
 Options:
-    -C    -- -c "Commited. Thanks!"
+    -C    -- -c "Committed. Thanks!"
     -F    -- -c "Committed with major changes. Thanks!"
     -M    -- -c "Committed with minor changes. Thanks!"
     -c    -- optional comment (default none)
